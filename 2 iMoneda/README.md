@@ -1,5 +1,5 @@
-# Celdas personalizadas
-Capturas del ejercicio `ejercicio_celdas`
+# iMoneda
+Capturas del ejercicio `iMoneda`
 
-![Captura 1](https://github.com/yasmanets/ios_iu/blob/main/1%20ejercicio_celdas/captures/CustomTableViewCell.png)
+![Captura 1](https://github.com/yasmanets/ios/blob/main/2%20iMoneda/captures/iMoneda.png)
 
