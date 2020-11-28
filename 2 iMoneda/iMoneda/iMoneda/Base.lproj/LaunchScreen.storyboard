@@ -15,26 +15,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="iOS básico: iMoneda" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bl-hd-BsU">
-                                <rect key="frame" x="45" y="135" width="284" height="51"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS básico: iMoneda" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bl-hd-BsU">
+                                <rect key="frame" x="45" y="135" width="285" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Yej-cs-PGt"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo-master" translatesAutoresizingMaskIntoConstraints="NO" id="QeG-wa-BRT">
-                                <rect key="frame" x="93" y="194" width="188" height="278"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-master" translatesAutoresizingMaskIntoConstraints="NO" id="QeG-wa-BRT">
+                                <rect key="frame" x="37.5" y="194" width="300" height="300"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="QeG-wa-BRT" firstAttribute="top" secondItem="2bl-hd-BsU" secondAttribute="bottom" constant="8" id="5mW-SV-ekd"/>
-                            <constraint firstItem="QeG-wa-BRT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="C7F-Jo-8e0"/>
-                            <constraint firstItem="2bl-hd-BsU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="135" id="Euj-Ai-c0J"/>
-                            <constraint firstItem="2bl-hd-BsU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="J3A-n0-X22"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QeG-wa-BRT" secondAttribute="bottom" constant="195" id="Upc-h4-qHT"/>
-                            <constraint firstItem="2bl-hd-BsU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="W9a-fT-PXl"/>
-                            <constraint firstItem="QeG-wa-BRT" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="gU9-qH-t1X"/>
-                            <constraint firstItem="2bl-hd-BsU" firstAttribute="centerX" secondItem="QeG-wa-BRT" secondAttribute="centerX" id="sea-hn-dkd"/>
+                            <constraint firstItem="2bl-hd-BsU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="JZa-Tf-gWr"/>
+                            <constraint firstItem="2bl-hd-BsU" firstAttribute="centerX" secondItem="QeG-wa-BRT" secondAttribute="centerX" id="f63-bx-Vve"/>
+                            <constraint firstItem="2bl-hd-BsU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="135" id="hHL-M5-6fD"/>
+                            <constraint firstItem="2bl-hd-BsU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="paJ-Ul-39E"/>
+                            <constraint firstItem="QeG-wa-BRT" firstAttribute="top" secondItem="2bl-hd-BsU" secondAttribute="bottom" constant="8" id="w1T-iH-Qze"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
