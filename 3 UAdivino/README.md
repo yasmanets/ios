@@ -1,5 +1,7 @@
 # UAdivino
 Capturas del ejercicio `UAdivino`
 
-![Captura 1](https://github.com/yasmanets/ios_iu/blob/main/1%20ejercicio_celdas/captures/CustomTableViewCell.png)
+![Captura 1 - UAdivino en ingés](https://github.com/yasmanets/ios/blob/main/3%20UAdivino/captures/UAdivino_english.png)
+
+![Captura 2 - UAdivino en español](https://github.com/yasmanets/ios/blob/main/3%20UAdivino/captures/UAdivino_spanish.png)
 
