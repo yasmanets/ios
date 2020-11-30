@@ -17,6 +17,8 @@ class Juego {
     var manoJugador: Mano!
     var estado: EstadoJuego
     var jugadaMaquina: Double = 0.0
+    var ganasdasMaquina: Int = 0
+    var ganadasJugador = 0
     
     init() {
         self.estado = EstadoJuego.noIniciado
@@ -26,6 +28,7 @@ class Juego {
         self.baraja = Baraja()
         self.baraja.barajar()
         self.manoJugador = Mano()
+        self.estado = EstadoJuego.turnoJugador
         
         jugadaMaquina = Double(Int.random(in: 1...7))
         if Bool.random() {
@@ -50,6 +53,24 @@ class Juego {
         acabarPartida()
     }
     
+    var partidasMaquina: Int {
+        get {
+            return self.ganasdasMaquina
+        }
+        set(num) {
+            self.ganasdasMaquina += num
+        }
+    }
+    
+    var partidasJugador: Int {
+        get {
+            return self.ganadasJugador
+        }
+        set(num) {
+            self.ganadasJugador += num
+        }
+    }
+    
     // Método de uso interno de la clase
     private func acabarPartida() {
         let valorMano = sumarManoJugador()
@@ -57,21 +78,25 @@ class Juego {
         if (valorMano>7.5) {
             mensaje = "Te has pasado!!!, la máquina tenía \(self.jugadaMaquina)"
             self.estado = .pierdeJugador
+            self.ganasdasMaquina += 1
         }
         else {
             if (valorMano>jugadaMaquina) {
                 mensaje = "Ganas!!!, la máquina tiene \(self.jugadaMaquina)"
                 self.estado = .ganaJugador
+                self.ganadasJugador += 1
             }
             else if (valorMano<jugadaMaquina) {
                 mensaje = "Pierdes!!!, la máquina tiene \(self.jugadaMaquina)"
                 self.estado = .pierdeJugador
+                self.ganasdasMaquina += 1
             }
             else {
                 mensaje = "Empate!!!"
                 self.estado = .empate
             }
         }
+        self.estado = EstadoJuego.noIniciado
         self.enviarNotificacion(mensaje: mensaje)
     }
     
